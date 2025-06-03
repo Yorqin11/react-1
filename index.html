@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Air Force Products</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .heart-button {
+            transition: all 0.3s ease;
+        }
+        .heart-button:hover {
+            transform: scale(1.1);
+        }
+        .heart-button.active svg {
+            fill: #EF4444;
+            stroke: #EF4444;
+        }
+        .product-description {
+            font-style: italic;
+            color: #666;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 min-h-screen p-10">
+    
+    <h1 class="text-white text-3xl font-bold mb-8">Products</h1>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        
+        <!-- Product Card 1 (matches your image exactly) -->
+        <div class="bg-white rounded-xl p-4 shadow-md relative">
+            <!-- Heart icon -->
+            <button class="heart-button absolute top-4 right-4 p-2 bg-white rounded-full shadow-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-400">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                </svg>
+            </button>
+            
+            <!-- Product image -->
+            <img src="./Picture.svg" alt="Nike Air Force 1" class="w-full rounded-lg mb-4">
+            
+            <!-- Product title -->
+            <h2 class="font-bold text-lg">NIKE AIR FORCE 1 '07 (white/black)</h2>
+            
+            <!-- Price -->
+            <p class="text-sm font-semibold text-gray-800">$89.99</p>
+            
+            <!-- Description (matches your image text exactly) -->
+            <p class="product-description text-xs my-2">I lost left shoe, don't need this one anymore. Please buy it.</p>
+            
+            <!-- Add to cart button -->
+            <button class="add-to-cart mt-2 w-full bg-gray-800 text-white py-2 rounded-xl flex items-center justify-center gap-2 hover:bg-gray-700 transition">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                </svg>
+                Add to cart
+            </button>
+        </div>
+
+        <!-- Additional product cards with different colors -->
+        <div class="bg-blue-100 rounded-xl p-4 shadow-md relative">
+            <button class="heart-button absolute top-4 right-4 p-2 bg-white rounded-full shadow-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-400">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                </svg>
+            </button>
+            <img src="./Picture.svg" alt="Nike Air Force 1" class="w-full rounded-lg mb-4">
+            <h2 class="font-bold text-lg">NIKE AIR FORCE 1 '07 (white/black)</h2>
+            <p class="text-sm font-semibold text-gray-800">$89.99</p>
+            <p class="product-description text-xs my-2">I lost left shoe, don't need this one anymore. Please buy it.</p>
+            <button class="add-to-cart mt-2 w-full bg-blue-600 text-white py-2 rounded-xl flex items-center justify-center gap-2 hover:bg-blue-700 transition">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                </svg>
+                Add to cart
+            </button>
+        </div>
+
+        <div class="bg-pink-100 rounded-xl p-4 shadow-md relative">
+            <button class="heart-button absolute top-4 right-4 p-2 bg-white rounded-full shadow-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-400">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                </svg>
+            </button>
+            <img src="./Picture.svg" alt="Nike Air Force 1" class="w-full rounded-lg mb-4">
+            <h2 class="font-bold text-lg">NIKE AIR FORCE 1 '07 (white/black)</h2>
+            <p class="text-sm font-semibold text-gray-800">$89.99</p>
+            <p class="product-description text-xs my-2">I lost left shoe, don't need this one anymore. Please buy it.</p>
+            <button class="add-to-cart mt-2 w-full bg-pink-500 text-white py-2 rounded-xl flex items-center justify-center gap-2 hover:bg-pink-600 transition">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                </svg>
+                Add to cart
+            </button>
+        </div>
+        <div class="bg-pink-100 rounded-xl p-4 shadow-md relative">
+            <button class="heart-button absolute top-4 right-4 p-2 bg-white rounded-full shadow-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-400">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                </svg>
+            </button>
+            <img src="./Picture.svg" alt="Nike Air Force 1" class="w-full rounded-lg mb-4">
+            <h2 class="font-bold text-lg">NIKE AIR FORCE 1 '07 (white/black)</h2>
+            <p class="text-sm font-semibold text-gray-800">$89.99</p>
+            <p class="product-description text-xs my-2">I lost left shoe, don't need this one anymore. Please buy it.</p>
+            <button class="add-to-cart mt-2 w-full bg-pink-500 text-white py-2 rounded-xl flex items-center justify-center gap-2 hover:bg-pink-600 transition">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                </svg>
+                Add to cart
+            </button>
+        </div>
+        <div class="bg-pink-100 rounded-xl p-4 shadow-md relative">
+            <button class="heart-button absolute top-4 right-4 p-2 bg-white rounded-full shadow-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-400">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                </svg>
+            </button>
+            <img src="./Picture.svg" alt="Nike Air Force 1" class="w-full rounded-lg mb-4">
+            <h2 class="font-bold text-lg">NIKE AIR FORCE 1 '07 (white/black)</h2>
+            <p class="text-sm font-semibold text-gray-800">$89.99</p>
+            <p class="product-description text-xs my-2">I lost left shoe, don't need this one anymore. Please buy it.</p>
+            <button class="add-to-cart mt-2 w-full bg-pink-500 text-white py-2 rounded-xl flex items-center justify-center gap-2 hover:bg-pink-600 transition">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                </svg>
+                Add to cart
+            </button>
+        </div>
+        <div class="bg-pink-100 rounded-xl p-4 shadow-md relative">
+            <button class="heart-button absolute top-4 right-4 p-2 bg-white rounded-full shadow-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-400">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                </svg>
+            </button>
+            <img src="./Picture.svg" alt="Nike Air Force 1" class="w-full rounded-lg mb-4">
+            <h2 class="font-bold text-lg">NIKE AIR FORCE 1 '07 (white/black)</h2>
+            <p class="text-sm font-semibold text-gray-800">$89.99</p>
+            <p class="product-description text-xs my-2">I lost left shoe, don't need this one anymore. Please buy it.</p>
+            <button class="add-to-cart mt-2 w-full bg-pink-500 text-white py-2 rounded-xl flex items-center justify-center gap-2 hover:bg-pink-600 transition">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                </svg>
+                Add to cart
+            </button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
